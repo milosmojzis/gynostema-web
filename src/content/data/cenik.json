@@ -1,0 +1,24 @@
+{
+  "polozky": [
+    { "nazev": "Použití jednorázových zrcadel", "cena": "50 Kč" },
+    { "nazev": "Ultrazvuková fotografie", "cena": "60 Kč" },
+    { "nazev": "Vydání receptu (u neregistrované pacientky)", "cena": "100 Kč" },
+    { "nazev": "Komplexní gynekologické vyšetření včetně UZV na vlastní žádost", "cena": "1000 Kč" },
+    { "nazev": "Ultrazvukové vyšetření na vlastní žádost", "cena": "500 Kč" },
+    { "nazev": "Vypracování posudku z lékařské dokumentace", "cena": "300 Kč" },
+    { "nazev": "Vstupní prohlídka do zaměstnání", "cena": "300 Kč" },
+    { "nazev": "Posun menstruace na vlastní žádost", "cena": "200 Kč" },
+    { "nazev": "Poplatek za administrativní úkony , provádění UZV na rámec úhrady pojišťovnou v rámci graviditou, jednorázově při vystavení těhotenské průkazky", "cena": "1000Kč" },
+    { "nazev": "Vyplnění formuláře pro komerční pojišťovnu nesledující léčebný účel nehrazený zdravotní pojišťovnou", "cena": "300 Kč" },
+    { "nazev": "Aplikace injekční antikoncepce včetně léku (DMP)", "cena": "450 Kč" },
+    { "nazev": "IUD - Ag, Cu", "cena": "1200Kč" },
+    { "nazev": "IUD Gold", "cena": "1400Kč" },
+    { "nazev": "IUD Mirena  IUD Levosert", "cena": "5500Kč 4000Kč" },
+    { "nazev": "IUD Jaydess (tříletá)", "cena": "5000Kč" },
+    { "nazev": "Sepsání žádosti o přerušení gravidity", "cena": "1500Kč" },
+    { "nazev": "Aplikace vakcíny proti HPV", "cena": "50 Kč" },
+    { "nazev": "Odstranění drobných kožních afekcí (pihy, bradavice)", "cena": "500 Kč" }
+  ],
+  "vyzadujeOvereni": true,
+  "poznamkaKOvereni": "Ceny ze Služeb 13. 3. 2026. Původní řádek Mirena/Levosert má dvě ceny ve stejné buňce; přiřazení není potvrzené."
+}

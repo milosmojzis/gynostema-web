@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import personal from '../content/data/persona.json';
+---
+<Layout title="Personál" current="/personal/">
+  <h1>Personál</h1>
+  {personal.lide.map((clovek) => <section class="person"><p class="eyebrow">{clovek.role}</p><h2>{clovek.jmeno}</h2>{clovek.foto && <img src={clovek.foto} alt={clovek.jmeno} />}{clovek.historie.length > 0 && <ul class="history">{clovek.historie.map((item) => <li>{item}</li>)}</ul>}</section>)}
+</Layout>

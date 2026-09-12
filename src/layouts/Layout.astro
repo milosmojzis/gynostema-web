@@ -1,0 +1,20 @@
+---
+import '../styles/global.css';
+import personal from '../content/data/persona.json';
+import aktuality from '../content/data/aktuality.json';
+import ordinace from '../content/data/ordinace.json';
+import obsah from '../content/data/obsah.json';
+import Gallery from '../components/Gallery.astro';
+interface Props { title: string; current: string; }
+const { title, current } = Astro.props;
+const nav = [{ href: '/', label: 'O nás' }, { href: '/sluzby/', label: 'Služby' }, { href: '/personal/', label: 'Personál' }, { href: '/kontakt/', label: 'Kontakt' }];
+const visibleNews = aktuality.polozky.filter((item) => item.zobrazit);
+---
+<!doctype html>
+<html lang="cs"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="Gynostema – gynekologická ambulance v Kralupech nad Vltavou." /><title>{title} | Gynostema</title><link rel="icon" href="/images/logo.jpg" type="image/jpeg" /></head>
+<body>
+  <header class="site-header"><div class="wrap header-inner"><a class="brand" href="/" aria-label="Gynostema – úvodní stránka"><img src="/images/logo.jpg" alt="Gynostema" /></a><nav aria-label="Hlavní navigace"><ul>{nav.map((item) => <li><a href={item.href} aria-current={current === item.href ? 'page' : undefined}>{item.label}</a></li>)}</ul></nav></div></header>
+  <div class="wrap notice">Obsah byl obnoven z archivované verze webu. Provozní údaje, ceny a zdravotní informace čekají na potvrzení ordinací.</div>
+  <div class="wrap page-grid"><main id="content"><slot /></main><aside aria-label="Další informace"><section class="aside-card news"><h2>Aktuality</h2>{visibleNews.length ? visibleNews.map((item) => <article><h3>{item.nadpis}</h3><p>{item.datum}</p><p>{item.text}</p></article>) : <p>Žádné aktuální oznámení.</p>}</section><section class="aside-card"><h2>Personál</h2><h3>Lékaři:</h3><ul>{personal.lide.filter((p) => p.role === 'Lékaři').map((p) => <li>{p.jmeno}</li>)}</ul><h3>Zdravotní sestra:</h3><ul>{personal.lide.filter((p) => p.role === 'Zdravotní sestra').map((p) => <li>{p.jmeno}</li>)}</ul></section><Gallery images={obsah.galerie} /></aside></div>
+  <footer><div class="wrap"><span>Gynostema</span><span>{ordinace.adresa.join(', ')}</span><a href={`tel:${ordinace.telefon.replaceAll(' ', '')}`}>{ordinace.telefon}</a></div></footer>
+</body></html>

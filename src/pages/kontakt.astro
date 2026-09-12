@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hours from '../components/Hours.astro';
+import ordinace from '../content/data/ordinace.json';
+---
+<Layout title="Kontakt" current="/kontakt/">
+  <h1>Kontakt</h1><h2>Kontaktní údaje</h2>
+  <div class="contact-grid"><div><p><a href={`tel:${ordinace.telefon.replaceAll(' ', '')}`}>{ordinace.telefon}</a><br /><a href={`mailto:${ordinace.email}`}>{ordinace.email}</a><br /><a href={ordinace.facebook} target="_blank" rel="noopener noreferrer">facebook.com/gynostema</a></p><address>{ordinace.adresa.map((line) => <>{line}<br /></>)}</address></div><div><p>{ordinace.umisteni}</p><p>{ordinace.vybaveni}</p></div></div>
+  <h2>Cesta autem</h2><p>{ordinace.cestaAutem}</p>
+  <h2>Cesta veřejnou dopravou</h2><p>{ordinace.cestaVlakem}</p><p>{ordinace.cestaAutobusem}</p>
+  <Hours />
+</Layout>

@@ -1,0 +1,11 @@
+{
+  "radky": [
+    { "den": "Pondělí", "dopoledne": "8.00 - 12.00", "odpoledne": "12.30 - 17.00", "lekarId": "cihlar" },
+    { "den": "Úterý", "dopoledne": "8.00 - 12.00", "odpoledne": "12.30 - 15.30", "lekarId": "wohlgemuth" },
+    { "den": "Středa", "dopoledne": "8.00 - 12.00", "odpoledne": "12.30 - 15.00", "lekarId": "wohlgemuth" },
+    { "den": "Čtvrtek", "dopoledne": "8.00 - 12.00", "odpoledne": "", "lekarId": "tereza" },
+    { "den": "Pátek", "dopoledne": "8.00 - 14.00", "odpoledne": "", "lekarId": "barbora" }
+  ],
+  "vyzadujeOvereni": true,
+  "poznamkaKOvereni": "Jedna pracovní verze převzatá z úvodu 8. 6. 2026. Kontakt 17. 6. 2026 uvádí jiné hodiny: Po 8.00–12.00 / 13.00–17.00, Út 8.00–12.00 / 13.00–15.00, St 8.00–12.00 / 13.00–14.00, Čt 7.00–12.00, Pá 8.00–13.00. Bez potvrzení ordinace nezveřejňovat jako aktuální."
+}

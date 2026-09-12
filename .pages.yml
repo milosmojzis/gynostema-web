@@ -1,0 +1,120 @@
+media:
+  input: public/images
+  output: /images
+content:
+  - name: obsah
+    label: O nás a galerie
+    type: file
+    path: src/content/data/obsah.json
+    format: json
+    fields:
+      - { name: uvod, label: Úvodní odstavce, type: text, list: true }
+      - { name: onlineUvod, label: Úvod k online službám, type: text }
+      - { name: onlinePokyn, label: Pokyn k přihlášení, type: text }
+      - { name: onlineSluzby, label: Online služby, type: text, list: true }
+      - { name: onlineRegistrace, label: Registrace, type: text, list: true }
+      - { name: nezrusenaObjednavka, label: Nezrušená objednávka, type: text }
+      - { name: smartmedixUrl, label: Odkaz SmartMEDIX, type: string }
+      - { name: galerie, label: Fotografie galerie, type: image, list: true }
+      - { name: vyzadujeOvereni, label: Vyžaduje ověření, type: boolean }
+      - { name: poznamkaKOvereni, label: Interní poznámka, type: text }
+  - name: aktuality
+    label: Aktuality a oznámení
+    type: file
+    path: src/content/data/aktuality.json
+    format: json
+    fields:
+      - name: polozky
+        label: Oznámení
+        type: object
+        list: true
+        fields:
+          - { name: nadpis, label: Nadpis, type: string }
+          - { name: datum, label: Datum nebo období, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: zobrazit, label: Zobrazit na webu, type: boolean }
+          - { name: vyzadujeOvereni, label: Vyžaduje ověření, type: boolean }
+          - { name: poznamkaKOvereni, label: Interní poznámka, type: text }
+  - name: hodiny
+    label: Ordinační hodiny
+    type: file
+    path: src/content/data/hodiny.json
+    format: json
+    fields:
+      - name: radky
+        label: Dny
+        type: object
+        list: true
+        fields:
+          - { name: den, label: Den, type: string }
+          - { name: dopoledne, label: Dopoledne, type: string }
+          - { name: odpoledne, label: Odpoledne, type: string }
+          - { name: lekarId, label: ID lékaře ze sekce Personál, type: string, description: "wohlgemuth, cihlar, tereza nebo barbora" }
+      - { name: vyzadujeOvereni, label: Vyžaduje ověření, type: boolean }
+      - { name: poznamkaKOvereni, label: Rozdíl mezi archivními verzemi, type: text }
+  - name: ordinace
+    label: Kontakt a adresa
+    type: file
+    path: src/content/data/ordinace.json
+    format: json
+    fields:
+      - { name: nazev, label: Název, type: string }
+      - { name: telefon, label: Telefon, type: string }
+      - { name: email, label: E-mail, type: string }
+      - { name: facebook, label: Facebook URL, type: string }
+      - { name: adresa, label: Řádky adresy, type: string, list: true }
+      - { name: umisteni, label: Umístění ambulance, type: text }
+      - { name: vybaveni, label: Zázemí, type: text }
+      - { name: cestaAutem, label: Cesta autem, type: text }
+      - { name: cestaVlakem, label: Cesta vlakem, type: text }
+      - { name: cestaAutobusem, label: Cesta autobusem, type: text }
+      - { name: vyzadujeOvereni, label: Vyžaduje ověření, type: boolean }
+      - { name: poznamkaKOvereni, label: Interní poznámka, type: text }
+  - name: personal
+    label: Personál
+    type: file
+    path: src/content/data/persona.json
+    format: json
+    fields:
+      - name: lide
+        label: Lidé
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Stálé ID pro rozpis, type: string, description: "Při změně jména ID neměňte." }
+          - { name: jmeno, label: Jméno, type: string }
+          - { name: role, label: Role, type: string }
+          - { name: foto, label: Fotografie, type: image }
+          - { name: medailon, label: Má archivní medailon, type: boolean }
+          - { name: historie, label: Profesní údaje, type: text, list: true }
+          - { name: vyzadujeOvereni, label: Vyžaduje ověření, type: boolean }
+          - { name: poznamkaKOvereni, label: Interní poznámka, type: text }
+      - { name: poznamkaKOvereni, label: Poznámka k seznamu, type: text }
+  - name: sluzby
+    label: Služby a pojišťovny
+    type: file
+    path: src/content/data/sluzby.json
+    format: json
+    fields:
+      - { name: polozky, label: Služby, type: text, list: true }
+      - { name: pojistovny, label: Pojišťovny, type: string, list: true }
+      - { name: hradiPojistovna, label: Co hradí pojišťovna, type: text }
+      - { name: nehradiPojistovna, label: Co nehradí pojišťovna, type: text }
+      - { name: potvrzeni, label: Potvrzení do práce a školy, type: text }
+      - { name: vyzadujeOvereni, label: Vyžaduje ověření, type: boolean }
+      - { name: poznamkaKOvereni, label: Interní poznámka, type: text }
+  - name: cenik
+    label: Ceník
+    type: file
+    path: src/content/data/cenik.json
+    format: json
+    fields:
+      - name: polozky
+        label: Výkony
+        type: object
+        list: true
+        fields:
+          - { name: nazev, label: Výkon, type: text }
+          - { name: cena, label: Cena dle archivu, type: string }
+      - { name: vyzadujeOvereni, label: Vyžaduje ověření, type: boolean }
+      - { name: poznamkaKOvereni, label: Interní poznámka, type: text }

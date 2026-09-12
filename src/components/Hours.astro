@@ -1,0 +1,6 @@
+---
+import hodiny from '../content/data/hodiny.json';
+import personal from '../content/data/persona.json';
+const jmena = new Map(personal.lide.map((p) => [p.id, p.jmeno]));
+---
+<section class="hours"><h2>Ordinační hodiny</h2><div class="table-scroll"><table><thead><tr><th scope="col">Den</th><th scope="col">Dopoledne</th><th scope="col">Odpoledne</th><th scope="col">Lékař</th></tr></thead><tbody>{hodiny.radky.map((row) => <tr><th scope="row">{row.den}</th><td>{row.dopoledne}</td><td>{row.odpoledne || '—'}</td><td>{jmena.get(row.lekarId) ?? '—'}</td></tr>)}</tbody></table></div></section>

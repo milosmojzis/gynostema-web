@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import sluzby from '../content/data/sluzby.json';
+import cenik from '../content/data/cenik.json';
+---
+<Layout title="Služby" current="/sluzby/">
+  <h1>Služby</h1>
+  <p><strong>Naše ordinace nabízí následující služby:</strong></p>
+  <ul>{sluzby.polozky.map((item) => <li>{item}</li>)}</ul>
+  <h2>Máme smlouvu s následujícími pojišťovnami:</h2>
+  <ul>{sluzby.pojistovny.map((item) => <li>{item}</li>)}</ul>
+  <h2>Co hradí pojišťovna?</h2><p>{sluzby.hradiPojistovna}</p>
+  <h2>Co nehradí pojišťovna?</h2><p>{sluzby.nehradiPojistovna}</p>
+  <h2>Ceník výkonů nehrazených zdravotní pojišťovnou</h2>
+  <div class="table-scroll"><table class="price-table"><thead><tr><th scope="col">Výkon</th><th scope="col">Cena</th></tr></thead><tbody>{cenik.polozky.map((item) => <tr><td>{item.nazev}</td><td>{item.cena}</td></tr>)}</tbody></table></div>
+  <h2>Potvrzení do práce, školy apod.</h2><p>{sluzby.potvrzeni}</p>
+</Layout>

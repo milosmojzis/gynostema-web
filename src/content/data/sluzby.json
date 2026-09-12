@@ -1,0 +1,22 @@
+{
+  "polozky": [
+    "kompletní gynekologickou a porodnickou ambulantní péči včetně ultrazvukové diagnostiky",
+    "sledování nálezů na děložním čípku a případné jejich řešení",
+    "těhotenská poradna až do termínu porodu",
+    "poradenství ohledně antikoncepce, sterility",
+    "řešení problémů s inkontinencí a sestupy orgánů v malé pánvi",
+    "provádění malých výkonů ambulantně a provádění větších operací v Nemocnici Slaný po dohodě"
+  ],
+  "pojistovny": [
+    "Všeobecná zdravotní pojišťovna (VZP, kód 111)",
+    "Zdravotní pojišťovna ministerstva vnitra (ZPMV, kód 211)",
+    "Vojenská zdravotní pojišťovna (VOZP, kód 201)",
+    "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví (OZP, kód 207)",
+    "Česká průmyslová zdravotní pojišťovna (ČPZP, kód 205)"
+  ],
+  "hradiPojistovna": "Veškerá vyšetření z gynekologie a porodnictví, 3x ultrazvukové vyšetření za graviditu, další vyšetření jsou hrazeny pouze z indikace lékaře.",
+  "nehradiPojistovna": "Seznam výkonů nadstandardních, nehrazených zdravotní pojišťovnou, najdete v ceníku naší ambulance.",
+  "potvrzeni": "Propustky a omluvné listy Vám budou potvrzeny zdarma. Jiný formulář si musíte připravit sama. Pokud zpracování ponecháte na sestře nebo lékaři, budou účtovány náklady na jeho vytvoření.",
+  "vyzadujeOvereni": true,
+  "poznamkaKOvereni": "Převzato ze Služeb 13. 3. 2026; odborná a smluvní tvrzení potvrdit před zveřejněním."
+}
