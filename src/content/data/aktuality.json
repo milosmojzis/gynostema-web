@@ -1,5 +1,19 @@
 {
   "polozky": [
-    { "nadpis": "Dovolena", "datum": "27.12.-2.1.2026", "text": "v době dovolené se s akutními obtížemi obracejte na gynek. oddělení nemocnice Slaný 312 575 151", "zobrazit": false, "vyzadujeOvereni": true, "poznamkaKOvereni": "Oznámení z úvodu 8. 6. 2026; datum je nejasné a pravděpodobně již neaktuální. Uchováno, ale nezobrazováno mezi aktuálními zprávami." }
+    {
+      "nadpis": "Dovolena",
+      "datum": "27.12.-2.1.2026",
+      "text": "v době dovolené se s akutními obtížemi obracejte na gynek. oddělení nemocnice Slaný 312 575 151",
+      "zobrazit": false,
+      "vyzadujeOvereni": true,
+      "poznamkaKOvereni": "Oznámení z úvodu 8. 6. 2026; datum je nejasné a pravděpodobně již neaktuální. Uchováno, ale nezobrazováno mezi aktuálními zprávami."
+    },
+    {
+      "nadpis": "Testovací aktualita",
+      "datum": "13. 9. 2026",
+      "text": "Toto je testovací aktualita.",
+      "zobrazit": true,
+      "vyzadujeOvereni": false
+    }
   ]
 }
