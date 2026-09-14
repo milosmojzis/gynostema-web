@@ -3,12 +3,15 @@
   "telefon": "731 183 387",
   "email": "info@gynostema.cz",
   "facebook": "https://www.facebook.com/gynostema",
-  "adresa": ["Nemocnice Kralupy nad Vltavou", "Mostní 934", "278 01 Kralupy nad Vltavou"],
+  "adresa": [
+    "Nemocnice Kralupy nad Vltavou",
+    "Mostní 934",
+    "278 01 Kralupy nad Vltavou"
+  ],
   "umisteni": "Ambulance ve 2. patře - dostupnost výtahem ihned za vchodem do nemocnice",
   "vybaveni": "V místě lékárna a návaznost na další specializované ambulance",
   "cestaAutem": "Do Kralup nad Vltavou dojedete po dálnici D8, sjedete na EXIT 9. Areál nemocnice se nachází na hlavní třídě, hned za mostem TGM. V areálu můžete pohodlně zaparkovat autem.",
   "cestaVlakem": "Do Kralup nad Vltavou jezdí vlaky z Prahy a Roudnice nad Labem každých 30 minut. Z nádraží projdete Žižkovou ulicí, odbočíte vlevo do Jodlovy ulice a před kruhovým objezdem zahnete vpravo do parku. Před sebou již uvidíte areál nemocnice.",
   "cestaAutobusem": "Pokud přijedete autobusem, nejlepší je vystoupit na zastávce Kralupy nad Vltavou, Městský úřad. Odtud je to do nemocnice jen pár desítek metrů.",
-  "vyzadujeOvereni": true,
-  "poznamkaKOvereni": "Telefon a adresa převzaty ze snímku Kontakt 17. 6. 2026. E-mail je v textu kontaktu skryt JavaScriptem; info@gynostema.cz pochází z odkazu v úvodu 8. 6. 2026. Před publikací potvrdit."
+  "vyzadujeOvereni": true
 }
