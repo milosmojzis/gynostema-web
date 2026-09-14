@@ -7,11 +7,24 @@
   ],
   "onlineUvod": "Pro naše pacientky zavádíme ON-LINE služby pro jednodušší komunikaci s ordinací (místo telefonu a emailu). 1.pro přístup je nutné mít v kartě pacienta(počítačovém programu ) uloženou kontaktní emailovou adresu -toto provede při Vaší návštěvě v ambulanci zdravotní sestra , tato služba je zpoplatněna jednorázově poplatkem 300 Kč",
   "onlinePokyn": "dále již pro přihlášení použijte tlačítko \"SmartMEDIX.net - viz níže",
-  "onlineSluzby": ["Zaslání žádosti o recept – vyplníte příslušný formulář, uvedete název a obvyklé dávkování", "Zadání objednávky k návštěvě lékaře – máte k dispozici kalendář s přehledem termínů, vyplníte formulář a po odeslání a zpracování u lékaře vám systém zašle zpětnou informaci o uvedené objednávce na váš email", "Takto zadanou objednávku si můžete nejpozději 2 dny předem smazat", "Přehled termínů objednávek – můžete sledovat přehled termínů svých budoucích návštěv v ordinaci", "Můžete sledovat způsob vyřízení svých požadavků, o vyřízení jste informována emailem"],
-  "onlineRegistrace": ["Při prvním přístupu do systému volíte „Nová registrace nebo zapomenuté heslo“ , vyplníte email, zadáte Souhlas a Registrovat. Systém vás doprovodí dalším postupem. Tím si vytvoříte vstupní přihlašovací údaje.", "Při každém dalším vstupu už zadáváte svůj email a zvolené heslo rovnou do přihlašovací obrazovky"],
+  "onlineSluzby": [
+    "Zaslání žádosti o recept – vyplníte příslušný formulář, uvedete název a obvyklé dávkování",
+    "Zadání objednávky k návštěvě lékaře – máte k dispozici kalendář s přehledem termínů, vyplníte formulář a po odeslání a zpracování u lékaře vám systém zašle zpětnou informaci o uvedené objednávce na váš email",
+    "Takto zadanou objednávku si můžete nejpozději 2 dny předem smazat",
+    "Přehled termínů objednávek – můžete sledovat přehled termínů svých budoucích návštěv v ordinaci",
+    "Můžete sledovat způsob vyřízení svých požadavků, o vyřízení jste informována emailem"
+  ],
+  "onlineRegistrace": [
+    "Při prvním přístupu do systému volíte „Nová registrace nebo zapomenuté heslo“ , vyplníte email, zadáte Souhlas a Registrovat. Systém vás doprovodí dalším postupem. Tím si vytvoříte vstupní přihlašovací údaje.",
+    "Při každém dalším vstupu už zadáváte svůj email a zvolené heslo rovnou do přihlašovací obrazovky"
+  ],
   "nezrusenaObjednavka": "Pokud se nemůžete dostavit na plánovanou návštěvu, prosím zrušte si svou objednávku nejpozději 2 dny předem sami, při nezrušené objednávce ( elektronicky, telefonicky) bude při další návštěvě účtováno penále 300 Kč.",
   "smartmedixUrl": "https://v3.smartmedix.net/Login/?ico=4488415&idreg=4488401&an=0",
-  "galerie": ["/images/ordinace-2516.jpg", "/images/ordinace-2527.jpg", "/images/ordinace-2491.jpg", "/images/ordinace-2512.jpg"],
-  "vyzadujeOvereni": true,
-  "poznamkaKOvereni": "Text úvodu z 8. 6. 2026. Ověřit zejména přihlašovací odkaz, poplatek 300 Kč, penále 300 Kč a tvrzení o přijímání nových pacientek."
+  "galerie": [
+    "/images/ordinace-2516.jpg",
+    "/images/ordinace-2527.jpg",
+    "/images/ordinace-2491.jpg",
+    "/images/ordinace-2512.jpg"
+  ],
+  "vyzadujeOvereni": true
 }
