@@ -4,8 +4,8 @@
       "nadpis": "Dovolená",
       "datum": "24.12.2026 - 3.1.2027",
       "text": "v době dovolené se s akutními obtížemi obracejte na gynek. oddělení nemocnice Slaný 312 575 151",
-      "zobrazit": false,
-      "vyzadujeOvereni": true
+      "zobrazit": true,
+      "vyzadujeOvereni": false
     },
     {
       "nadpis": "Stránky opět v provozu",
